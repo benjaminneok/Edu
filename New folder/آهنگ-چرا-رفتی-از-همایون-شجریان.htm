@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>  
+<base href="http://www.irmp3.ir/">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="image/favicon.ico" />
+                <meta name="keywords" content="همایون شجریان,چرا رفتی,دانلود آهنگ چرا رفتی از همایون شجریان">
+                <meta name="description" content="پخش و دانلود آهنگ زیبای چرا رفتی از همایون شجریان - دانلود آهنگ جدید - IRMP3">
+    <title>♫♫ دانلود آهنگ چرا رفتی از همایون شجریان ♫♫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" rel="image_src" />
+<meta content="200" name="video_width" />
+<meta content="200" name="video_height" />
+<meta content="application/x-shockwave-flash" name="video_type" />
+<meta property="og:audio:title" content="چرا رفتی" />
+<meta property="og:audio:artist" content="همایون شجریان" />
+<meta property="og:audio:album" content="نه فرشته ام نه شیطان" />
+<meta property="og:audio:type" content="audio/vnd.facebook.bridge" />
+<meta property="og:site_name" content="IRMP3"/>
+<meta property="og:title" content="دانلود آهنگ چرا رفتی از همایون شجریان" />
+<meta property="og:type" content="music.song" />
+<meta property="og:url" content="http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان" />
+<meta property="og:image" content="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" />
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name" : "دانلود آهنگ جدید",
+    "url": "http://irmp3.ir",
+    "logo": "http://www.irmp3.ir/images/logo.png",
+    "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+98-31-34530510",
+    "contactType" : "customer service",
+    "contactOption" : "TollFree",
+    "areaServed" : "IR",
+    "availableLanguage" : "Persian"
+    }],
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://www.irmp3.ir/music/music/p1/q/{search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    "sameAs" : [
+        "https://t.me/irmp3"
+    ]
+    }
+</script>
+<script type="application/ld+json">{  "@context": "http://schema.org",  "@type": "MusicPlaylist",  "aggregateRating": {    "@type": "AggregateRating",    "bestRating": "5",    "ratingCount": "1061",    "ratingValue": "4"  },  "image": "http://www.irmp3.ir/image/music/album/130390840266474585.jpg",  "name": "دانلود آهنگ چرا رفتی از همایون شجریان",  "description": "دانلود آهنگ چرا رفتی از همایون شجریان"}</script><script type="text/javascript">
+/*if(top!=self)top.location.replace(location);*/
+function breakout_of_frame()
+{
+  
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+}
+</script>
+  <!--<link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" />-->
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <!--<link rel="stylesheet" href="css/animate.css" type="text/css" />-->
+  <link as="style"
+ rel="stylesheet preload prefetch"  href="css/font-awesome.min.css" type="text/css" 
+ crossorigin="anonymous" />
+  <link as="style"
+ rel="stylesheet preload prefetch"  href="css/simple-line-icons.css" type="text/css" 
+ crossorigin="anonymous" />
+  <link as="style"
+ rel="stylesheet preload prefetch"  href="css/font.css" type="text/css" 
+ crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/app.v1.css" type="text/css" />  
+  
+   <link as="style"
+ rel="stylesheet preload prefetch" 
+ href="demos/bt4/assets/icons/font-awesome/css/fontawesome-all.css" 
+ type="text/css" 
+ crossorigin="anonymous" >
+  <!--<script src="js/jquery.min.js"></script>-->
+   <script type="text/javascript" src="includes/aes.js?ver=1.1"></script>
+    <script type="text/javascript" src="script/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="includes/aes-json-format.js"></script>
+<script type="text/javascript" src="script_irmp3.js"></script>
+ <script type="text/javascript">
+ function Send(musicid)
+{
+		if (document.getElementById('comment').value.trim() == "")
+        {
+        	document.getElementById('statusbar').innerHTML = "نظری وارد نشده است";
+            return;
+        }
+
+        $(function() {
+var
+email_t = $( "#email" ),
+comment_t = $( "#comment" ),
+name_t = $( "#name" );
+
+
+        var loadUrl = 'signal=comment&mid='+musicid+'&name='+encodeURIComponent(name_t.val())+'&email='+encodeURIComponent(email_t.val())+'&comment='+encodeURIComponent(comment_t.val());
+
+$.ajax({
+type: "POST"
+, url: "Aj.php"
+, data: loadUrl
+, success: function(responseText){ 
+    $("#send_comment").html(responseText);
+}
+});
+});
+}
+
+        // rating script
+        $(function(){
+            $('.rate-btn').hover(function(){
+                $('.rate-btn').removeClass('rate-btn-hover');
+                var therate = $(this).attr('id');
+                for (var i = therate; i >= 0; i--) {
+                    $('.rate-btn-'+i).addClass('rate-btn-hover');
+                };
+            });
+
+            $('.rate-btn').click(function(){
+                var therate = $(this).attr('id');
+                var dataRate = 'signal=rate&music_id=55821&rate='+therate; //
+                $('.rate-btn').removeClass('rate-btn-active');
+                for (var i = therate; i >= 0; i--) {
+                    $('.rate-btn-'+i).addClass('rate-btn-active');
+                };
+                $.ajax({
+                    type : "POST",
+                    url : "Aj.php",
+                    data: dataRate,
+                    success:function(resp){
+                        $("#send_rate").html(resp);
+
+                    }
+                });
+
+            });
+        });
+        
+function Register(val_type)
+{
+    var meghdar;
+    if (val_type=='mob')
+    meghdar=document.s_mob.getElementById('q').value.trim();
+    else
+    meghdar=document.s_com.getElementById('q').value.trim();
+if (meghdar == "" || meghdar.length<3 )
+{
+return false;
+}
+}
+</script>
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51451870-1', 'irmp3.ir');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body onload="breakout_of_frame()" class="">
+  <section class="vbox">
+     <header class="bg-black lter header header-md navbar navbar-fixed-top-xs">
+            <div class="navbar-header aside bg-info nav-xs">
+                <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                    <i class="icon-list"></i>
+                </a>
+                <a href="http://www.irmp3.ir" class="navbar-brand text-lt">
+                    <i class="icon-earphones"></i>
+                    <img src="images/logo.png" alt="irmp3" class="hide">
+                    <span class="hidden-nav-xs m-l-sm">IRMP3</span>
+                </a>
+
+            </div>
+            <ul class="nav navbar-nav hidden-xs">
+                <li>
+                    <a href="#nav,.navbar-header" data-toggle="class:nav-xs,nav-xs" class="text-muted">
+                        <i class="fa fa-indent text"></i>
+                        <i class="fa fa-dedent text-active"></i>
+                    </a>
+                </li>
+            </ul>
+            <form name="s_com" method="post" onsubmit="return Register('com');" action="search_new" class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button name="submit" type="submit" class="btn btn-sm bg-white btn-icon rounded">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                        <input type="text" style="direction: rtl;" id="q" name="q" placeholder="جستجوی آهنگ / خواننده / آلبوم" class="form-control input-sm no-border rounded">
+                    </div>
+                </div>
+            </form>
+            <div class="navbar-right hidden-xs">
+               <a title="دانلود آهنگ جدید" href="http://irmp3.ir"><img style="height: 60px;" src="images/logo.png" alt="دانلود آهنگ جدید - IRMP3.IR"></a>
+            </div>
+        </header>
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-black dk nav-xs aside hidden-print" id="nav">
+                    <section class="vbox">
+                        <section class="w-f-md scrollable">
+                            <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                                <!-- nav -->
+                                <nav class="nav-primary hidden-xs">
+                                    <ul class="nav bg clearfix">
+                                        <li>
+                                            <a href="http://www.irmp3.ir">
+                                                <i class="icon-home icon text-success"></i>
+                                                <span class="font-bold">صفحه اصلی</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.irmp3.ir/music/new">
+                                                <i class="icon-fire icon text-info"></i>
+                                                <span class="font-bold">آهنگ های جدید</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.irmp3.ir/music/album/new">
+                                                <i class="fa fa-folder-open-o icon text-primary-lter"></i>
+                                               
+                                                <span class="font-bold">آلبوم های جدید</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.irmp3.ir/music/singer">
+                                                <i class="icon-users icon text-info-dker"></i>
+                                                <span class="font-bold">خوانندگان</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.irmp3.ir/music/album">
+                                                <i class="icon-folder icon text-primary"></i>
+                                                <span class="font-bold">آلبوم ها</span>
+                                            </a>
+                                        </li>
+                                         <li>
+                                            <a href="http://www.irmp3.ir/music/music">
+                                                <i class="icon-music-tone-alt icon text-primary"></i>
+                                                <span class="font-bold">آهنگ ها</span>
+                                            </a>
+                                        </li>
+                                         <li>
+                                            <a href="http://www.irmp3.ir/music/gener">
+                                                <i class="icon-tag icon text-primary"></i>
+                                                <span class="font-bold">سبک ها</span>
+                                            </a>
+                                        </li>
+                                        <li class="m-b hidden-nav-xs"></li>
+                                    </ul>
+                                </nav>
+                                <!-- / nav -->
+                            </div>
+                        </section>
+                        <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                            <div class="bg hidden-xs ">
+                                <div class="dropdown dropup wrapper-sm clearfix">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="thumb-sm avatar pull-left m-l-xs">
+                                            <img src="images/a3.png" class="dker" alt="irmp3">
+                                            <i class="on b-black"></i>
+                                        </span>
+                                        <span class="hidden-nav-xs clear">
+                                            <span class="block m-l">
+                                                <strong class="font-bold text-lt">IRMP3.ir</strong>
+                                            </span>
+                                            <span class="text-muted text-xs block m-l">بزرگترین آرشیو موسیقی ایرانی</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                    </section>
+                </aside>
+        <!-- /.aside -->
+        <section id="content">
+          <section class="vbox">
+          <section class="w-f-md">
+            <section class="hbox stretch bg-black dker">
+             <form name="s_mob" method="post" onsubmit="return Register('mob');" action="search_new" class="visible-xs navbar-form navbar-left input-s-lg m-t m-l-n-xs" style="padding: 0px 15px; margin: 0px;width:100%" role="search">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button name="submit" type="submit" class="btn btn-sm bg-white btn-icon rounded">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                        <input type="text" style="direction: rtl;" id="q" name="q" placeholder="جستجوی آهنگ / خواننده / آلبوم" class="form-control input-sm no-border rounded">
+                    </div>
+                </div>
+            </form>
+            
+              <aside class="col-sm-5" id="sidebar">
+                <section class="vbox animated fadeInUp">
+                  <section class="scrollable">
+                    <div class="bg-black dk m-t-n-xxs item pos-rlt"> 
+                    <div class="item pos-rlt" style="text-align: center;">
+                    <!--               <script type="text/javascript">
+;!( function( w, d ) {
+'use strict';
+var ad = { user: "1400396108", width: 468, height: 60, id: 'anetwork-' + ~~( Math.random() * 999999  ) },
+h = d.head || d.getElementsByTagName( 'head' )[ 0 ],
+s = location.protocol + '//static-cdn.anetwork.ir/aw/aw.js';
+if ( typeof w.anetworkParams != 'object' )
+w.anetworkParams = {};
+d.write( '<div id="' + ad.id + '" style="display: inline-block"></div>' );
+w.anetworkParams[ ad.id ] = ad;
+d.write( '<script type="text/javascript" src="' + s + '" async></scri' + 'pt>' );
+})( this, document );</script>-->
+             
+   </div>
+                          <h1 class="font-thin m-b">دانلود آهنگ چرا رفتی از همایون شجریان</h1><div class="item pos-rlt" style="text-align: center;margin-bottom:10px; margin-top:10px">
+                                            <div class="yn-bnr" id="ynpos-10139"></div>
+                                            </div><div class="pos-rlt">
+<div style="height:auto !important; margin-bottom:10px; position:relative">
+                                            <div class="item">
+                                            
+                                                <div class="pos-rlt">
+                                                   <div class="item-overlay opacity-zero r r-2x bg-black active">
+                                <div class="text-star">
+                                  <i style="display:block !important" class="fa fa-star "></i>
+                                  <i style="display:block !important" class="fa fa-star "></i>
+                                  <i style="display:block !important" class="fa fa-star "></i>
+                                  <i style="display:block !important" class="fa fa-star "></i>
+                                  <i style="display:block !important" class="fa fa-star text-star-o"></i>
+                                </div>
+                            </div>
+                                                    
+                                                      <img class="r r-2x img-full" src="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" alt="دانلود و پخش آهنگ چرا رفتی از همایون شجریان">
+                                
+                                                </div>
+                                                
+                                            </div>
+                                        </div></div>
+                                        <div class="clearfix visible-xs"></div><div class="item pos-rlt" style="text-align: center;">
+                            <span>
+                            <a class="btn btn-s-md btn-primary btn-rounded" href="http://www.irmp3.ir/play/55821/دانلود-آهنگ-چرا-رفتی-از-همایون-شجریان">
+                            چرا رفتی
+                            </a>
+                            </span>
+                        
+                        
+                               <a class="btn btn-s-md btn-primary btn-rounded" href="music/singer_album/5335/فول-آلبوم-های-کامل-همایون-شجریان" target="_blank">
+                               <span class="reviewer">همایون شجریان</span>
+                               </a>
+                           <br />
+                            <!--<span class="dtreviewed" style="font-size:2px;"></span>-->
+                            <!--<span class="rating" style="font-size:2px;">5</span>--><div class="tags" style="margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;"><a title="متن آهنگ چرا رفتی از همایون شجریان" style="padding:7px; float:none;background-color:#ff1600 !important; font-size:14px !important" href="http://www.irmp3.ir/lyric/55821/متن-آهنگ-چرا-رفتی-از-همایون-شجریان" target="_blank">متن آهنگ چرا رفتی از همایون شجریان</a></div></div> <div class="item pos-rlt" style="text-align: center;margin-bottom:10px; margin-top:10px">
+ <a id="dllink" href=""><img title="دانلود" src="image/download.png" /></a>
+                 </div>
+                 <div class="item pos-rlt" style="text-align: center;margin-bottom:10px; margin-top:10px">
+                <div class="yn-bnr" id="ynpos-9997"></div>
+                 </div>
+                 <h1 style="font-size: 15px;" class="font-thin m-b">امتیاز خود را برای این آهنگ با انتخاب ستاره از 1 تا 5 ثبت نمایید</h1>
+                 <div id="send_rate" class="item pos-rlt" style="text-align: center;margin-bottom:10px; margin-top:10px">
+                                  <div class="rate-ex1-cnt">
+            <div id="1" class="rate-btn-1 rate-btn "></div>
+            <div id="2" class="rate-btn-2 rate-btn "></div>
+            <div id="3" class="rate-btn-3 rate-btn "></div>
+            <div id="4" class="rate-btn-4 rate-btn "></div>
+            <div id="5" class="rate-btn-5 rate-btn "></div>
+        </div>
+        </div>
+                 <div class="item pos-rlt">
+                  <div id="song_play" class="list-group-item" style="direction: ltr;margin-bottom:20px;text-align: center;">
+    <audio style="width: 95%;" preload="none" controls="controls">
+  <source id="sdllink" src="" type="audio/mp3">
+مرورگر شما پخش آنلاين را پشتيباني نمي کند
+</audio>
+</div>
+                 </div>
+                 <div class="item pos-rlt" style="text-align: center">
+              
+
+                 </div>
+                 <div class="item pos-rlt">
+                 <div class="admin">
+<p style="text-align:center"><span style="font-weight:bold">مشخصات آهنگ چرا رفتی از همایون شجریان</span></p><p style="text-align:center">آهنگ چرا رفتی از همایون شجریان تاکنون <span style="color:#F6D925">94391</span> بار توسط بازدیدکنندگان <a style="color:#F6D925; font-weight:bold; font-size:13px; text-decoration:none" target="_blank" href="http://www.irmp3.ir">IRMP3</a> پخش یا دانلود شده است.<br />این آهنگ از <a style="color:#F6D925; font-weight:bold; font-size:13px; text-decoration:none" href="music/album_music/8738/آهنگ-های-آلبوم-نه-فرشته-ام-نه-شیطان-از-همایون-شجریان">آلبوم نه فرشته ام نه شیطان</a> می باشد<br />سبک آهنگ <b>چرا رفتی</b> از <b>همایون شجریان</b> <a style="color:#F6D925; font-weight:bold; font-size:13px; text-decoration:none" target="_blank" href="http://www.irmp3.ir/music/music/g/20/آهنگهای-سبک-سنتی">سنتی</a> می باشد<br />مدت زمان آهنگ <b>چرا رفتی</b> از <b>همایون شجریان</b> <span style="color:#F6D925">۰۵:۱۸</span> دقیقه است.<br />
+لطفا نظر خود را در رابطه با آهنگ <b>چرا رفتی</b> از <b>همایون شجریان</b> در زیر همین صفحه وارد نمایید.</p></div>
+</div>
+
+<div class="item pos-rlt" style="text-align: center;margin-bottom:10px;background-color: #bdc6d0">
+<div id="pos-article-display-6543"></div>
+<!--<div id='mediaad-A'></div>-->
+</div>
+
+
+                            <div style="margin-bottom:10px; text-align:center; width:100%;">
+
+                            </div>
+                            <div class="item pos-rlt">
+                 <div class="admin" style="text-align:center !important">
+                    <img title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="sharethis پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/sharethis.png"><br>
+<a title="اشتراک گذاری در بالاترین" rel="nofollow" target="_blank" href="http://www.balatarin.com/links/submit?phase=2&amp;url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش و دانلود آهنگ چرا رفتی از همایون شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="balatarin پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/balatarin.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در کلوب" target="_blank" href="http://www.cloob.com/share/link/add?url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش و دانلود آهنگ چرا رفتی از همایون شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="cloob پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/cloob.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در فیس نما" target="_blank" href="http://facenama.com/links/?url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&title=پخش و دانلود آهنگ چرا رفتی از همایون شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="facenama پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/facenama.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک در توییتر" rel="nofollow" target="_blank" href="http://twitter.com/home?status=پخش و دانلود آهنگ چرا رفتی از همایون شجریان - http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="twitter پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/twitter.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در Facebook" rel="nofollow" target="_blank" href="http://facebook.com/sharer.php?u=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;t=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="facebook پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/facebook.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در Google Bookmarks" rel="nofollow" target="_blank" href="http://google.com/bookmarks/mark?op=add&amp;bkmk=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="google پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/google.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در Google Buzz" rel="nofollow" target="_blank" href="http://www.google.com/reader/link?url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان&amp;srcURL=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="buzz پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/buzz.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در Digg" rel="nofollow" target="_blank" href="http://digg.com/submit?phase=2&amp;url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="digg پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/digg.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در Technorati" rel="nofollow" target="_blank" href="http://technorati.com/faves?add=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="technorati پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/technorati.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در delicious" rel="nofollow" target="_blank" href="http://delicious.com/post?url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان&amp;title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="delicious پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/delicious.png" class="ps-social-sharing-2011">
+				  </a>
+<a title="اشتراک گذاری در FriendFeed" rel="nofollow" target="_blank" href="http://friendfeed.com/share?title=پخش+و+دانلود+آهنگ+چرا+رفتی+از+همایون+شجریان&amp;url=http://www.irmp3.ir/play/55821/آهنگ-چرا-رفتی-از-همایون-شجریان">
+				  <img border="0" title="پخش و دانلود آهنگ چرا رفتی از همایون شجریان" alt="friendfeed پخش و دانلود آهنگ چرا رفتی از همایون شجریان" src="image/share/friendfeed.png" class="ps-social-sharing-2011">
+				  </a>
+</div>
+</div>                 <div class="item pos-rlt">
+                 <div class="admin">
+                 <p style="text-align:center">
+<b>کد پخش آنلاين اين آهنگ براي وبلاگ يا وب سايت</b>
+</p>
+<textarea id="weblog_src" readonly="readonly" onclick="javascript:this.select();" cols="100%" rows="10" tabindex="4" style="width:100%;cursor:copy;color:#000000;font-size:11px;text-align:left;direction:ltr;">
+<!-- Begin play online music IRMP3 - http://www.irmp3.ir -->
+<audio style="width:150px" autoplay="" controls="">
+  <source type="audio/mpeg" src=""></source>
+  <!-- پيام مورد نظر شما در صورتي که مرورگر قابليت پخش آنلاين را پشتيباني نکند -->
+مرورگر شما پخش آنلاين را پشتيباني نمي کند
+</audio>
+<p><a title="دانلود آهنگ جديد" href="http://www.irmp3.ir" target="_blank">دانلود آهنگ جديد</a></p>
+<!-- End IRMP3 Code -->
+</textarea>
+                 </div>
+                  <script type="text/javascript">
+ico ('NjI0NjM');
+</script>
+<div class="item pos-rlt">
+
+</div>
+                 <div class="admin">
+<p style="text-align:justify">
+<b>راهنمای دانلود</b> : 
+	جهت دانلود روی گزینه دانلود <strong>پایین</strong> تصویر آهنگ کلیک سمت راست کرده و save target as یا save link as را انتخاب کنید.</p>
+<p style="text-align: justify;">
+	همچنین می توانید با استفاده از برنامه های QR Scanner یا Barcode Scanner در گوشیهای آندروید ، IOS و ... دوربین گوشی خود را روی کد QR تولید شده در بالا نگه دارید تا کد ، اسکن شود و لینک دانلود برای شما در موبایل نمایش داده شود.</p>
+
+</div>
+<div class="item pos-rlt">
+
+</div>
+<div class="item pos-rlt" style="text-align: center">
+
+ </div>
+ <div class="item pos-rlt">
+                   <h3 class="font-thin m-b">برخی از آهنگ های دیگر همایون شجریان</h3><ul class="list-group list-group-lg no-radius no-border no-bg m-t-n-xxs m-b-none auto"><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">5:34</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/55823/دانلود-آهنگ-دل-به-دل-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/55823/دانلود-آهنگ-دل-به-دل-از-همایون-شجریان">دل به دل</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">8:02</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/53316/دانلود-آهنگ-صدای-تو-را-دوست-دارم-با-حضور-مژگان-شجریان-از-همایون-شجریان">  <img src="http://dl.irmp3.ir/data/pic/130451226421093750.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/53316/دانلود-آهنگ-صدای-تو-را-دوست-دارم-با-حضور-مژگان-شجریان-از-همایون-شجریان">صدای تو را دوست دارم با حضور مژگان شجریان</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">7:13</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/53485/دانلود-آهنگ-هوای-گریه-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130370169701131342.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/53485/دانلود-آهنگ-هوای-گریه-از-همایون-شجریان">هوای گریه</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">5:16</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/55824/دانلود-آهنگ-کولی-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/55824/دانلود-آهنگ-کولی-از-همایون-شجریان">کولی</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">7:33</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/55826/دانلود-آهنگ-چونی-بی-من-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130390840266474585.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/55826/دانلود-آهنگ-چونی-بی-من-از-همایون-شجریان">چونی بی من</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">موسیقی فیلم</a>
+                         <a class="m-r-sm">2:33</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/69569/دانلود-آهنگ-آرایش-غلیظ-۱-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130539070647868259.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/69569/دانلود-آهنگ-آرایش-غلیظ-۱-از-همایون-شجریان">آرایش غلیظ ۱</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">5:43</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/53457/دانلود-آهنگ-تصنیف-مست-نگاه-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130370169640517875.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/53457/دانلود-آهنگ-تصنیف-مست-نگاه-از-همایون-شجریان">تصنیف مست نگاه</a></span>
+                      
+                        </div>
+                      </li><li class="list-group-item">
+                      <a class="m-r-sm pull-right">
+                          <i class="icon-music-tone-alt text"></i>
+                        </a>
+                        <div class="pull-left m-l">
+                        <a class="m-r-sm">سنتی</a>
+                         <a class="m-r-sm">9:52</a>
+                        </div>
+                       
+                        <div class="clear text-ellipsis">
+                          <a href="http://www.irmp3.ir/play/53396/دانلود-آهنگ-دیدار-مولانا-و-شمس-از-همایون-شجریان">  <img src="http://www.irmp3.ir/image/music/album/130370169482828856.jpg" loading="lazy" style="width:60px"></a>
+                          <span>
+                            <a href="http://www.irmp3.ir/play/53396/دانلود-آهنگ-دیدار-مولانا-و-شمس-از-همایون-شجریان">دیدار مولانا و شمس</a></span>
+                      
+                        </div>
+                      </li></ul>                    </div>
+                     <div class="item pos-rlt">
+                    <div class="tags"><a rel="tag" href="http://www.irmp3.ir/tag/چرا-رفتی" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>چرا رفتی</a><a rel="tag" href="http://www.irmp3.ir/tag/همایون-شجریان" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>همایون شجریان</a><a rel="tag" href="http://www.irmp3.ir/tag/آهنگ-چرا-رفتی-از-همایون-شجریان" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>آهنگ چرا رفتی از همایون شجریان</a><a rel="tag" href="http://www.irmp3.ir/tag/چرا-رفتی-همایون-شجریان" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>چرا رفتی همایون شجریان</a><a rel="tag" href="http://www.irmp3.ir/tag/آهنگ-چرا-رفتی" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>آهنگ چرا رفتی</a><a rel="tag" href="http://www.irmp3.ir/tag/آهنگ-های-همایون-شجریان" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>آهنگ های همایون شجریان</a><a rel="tag" href="http://www.irmp3.ir/tag/دانلود-آهنگ-سنتی" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>دانلود آهنگ سنتی</a><a rel="tag" href="http://www.irmp3.ir/tag/دانلود-آهنگ-های-همایون-شجریان" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>دانلود آهنگ های همایون شجریان</a><a rel="tag" href="http://www.irmp3.ir/tag/دانلود-آهنگ-چرا-رفتی" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>دانلود آهنگ چرا رفتی</a><a rel="tag" href="http://www.irmp3.ir/tag/کد-آهنگ-چرا-رفتی-برای-وبلاگ" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>کد آهنگ چرا رفتی برای وبلاگ</a><a rel="tag" href="http://www.irmp3.ir/tag/دانلود-آهنگ" target="_blank"><i style="margin-left:5px" class="fa fa-tag icon"></i>دانلود آهنگ</a></div>                    </div>
+                    <div class="item pos-rlt" style="text-align: center">
+                    
+</div>
+                    <section style="clear: both" class="panel panel-default">
+                    <header style="direction: rtl;" class="panel-heading font-bold">نظر خود را در رابطه با این آهنگ ارسال نمایید</header>
+                    <div class="panel-body">
+                    <div id="send_comment" class="item pos-rlt">
+                  <form style="direction: rtl;">
+                    <div class="form-group pull-in clearfix">
+                      <div class="col-sm-6">
+                        <label>نام</label>
+                        <input name="name" id="name" type="text" class="form-control rounded" placeholder="">
+                      </div>
+                      <div class="col-sm-6">
+                        <label >ایمیل</label>
+                        <input name="email" id="email" type="email" class="form-control rounded" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>نظر شما</label>
+                      <textarea id="comment" name="comment" class="form-control" rows="5" placeholder=""></textarea>
+                    </div>
+                    <div class="form-group" style="text-align: center;">
+                      <input type="button" value="ارسال" class="btn btn-success" onclick="Send(55821);" name="send">
+                    </div>
+                  </form>
+                  <div style="color: red;" id="statusbar"></div>
+                  </div>
+                  <div style="padding-bottom: 55px;"></div>
+                  </div>
+                  </section>
+                    </div>
+                    
+                 </div>
+                
+                    
+                    
+                  </section>
+                </section>
+              </aside>
+                          <!-- / side content -->
+              <section class="col-sm-4 no-padder bg">
+                <section class="vbox">
+                  <section class="scrollable">
+                  <div class="bg-black bg">
+                    <div class="m-t-n-xxs item pos-rlt">
+                                                   </div>
+                     <h3 class="font-thin m-b">آهنگ های داغ هفته</h3>
+                  
+                                   
+                  <h3 class="font-thin m-b">آهنگ های داغ ماه</h3>
+                                      <!--<ul class="list-group list-group-lg no-bg auto m-b-none m-t-n-xxs">
+                      <li class="list-group-item clearfix">
+                     
+                      </li>
+                    </ul>-->
+                    </div>
+                  </section>
+                </section>
+              </section>
+              <!-- side content -->
+              <section class="col-sm-3 no-padder dk">
+                <section class="vbox">
+                  <section class="scrollable">
+                  <div class="bg-black dk">
+                                                          <li class="list-group-item"  style="text-align: center;">
+<div class="yn-bnr" id="ynpos-8238"></div>
+                                        </li>
+                 
+                    <div class="m-t-n-xxs">
+                    
+                    <div class="item pos-rlt"  style="text-align: center;margin-bottom:10px;background-color: #bdc6d0">
+                   <div id="pos-article-display-6544"></div>
+                        <!--<div id='mediaad-tEGj'></div>-->
+                    </div>
+                    
+               
+                  
+                    </div>
+                    <section class="panel panel-default">
+                    <header class="panel-heading">                    
+                      <span class="label bg-dark">40</span> نظرات این آهنگ
+                    </header>
+                    <section class="panel-body slim-scroll" data-height="230px" data-size="10px"><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۳/۶/۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">آناهیتا </small>
+                          <small style="text-align:justify" class="block m-t-sm">عالیه عالی <br />
+شعر زیبا از مرحوم سیمین بهبهانی، صدای زیبا و گوش نواز همایون شجریان، همه چی زیبا و عالی </small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۳/۱۰/۲</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">افسانه </small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی بود</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۱/۲۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">وحید تگریان</small>
+                          <small style="text-align:justify" class="block m-t-sm">بسیار عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۲/۱۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالییییییییییییییییی وبسیار زیبا <br />
+<br />
+ولی چرا کنسرت های ایشان و دیگر هنرمندان همیشه باید در شمال شهر برگزار شود. چرا؟؟؟؟؟؟<br />
+</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۷/۲۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">خیلی عالی بود</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۸/۲۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">azar</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی ،عالی ، محشر</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۱۱/۲۶</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">shani</small>
+                          <small style="text-align:justify" class="block m-t-sm">بسیارزیبا و رویایی </small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۱۲/۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">شیخ</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالیییییییییییی واسه یه لهظه شه خیلی خیلی خیلی عالی <br />
+</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۱۲/۲۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ارش</small>
+                          <small style="text-align:justify" class="block m-t-sm">معرکه ست</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۴/۱۲/۲۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">amir</small>
+                          <small style="text-align:justify" class="block m-t-sm">ای جان استاد عزیزم..<br />
+منو ساختی عزیز سنتی کارم کردی<br />
+چرارفتی چرا من بیقرارم به سر سودای آغوش تو دارم<br />
+</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۵/۴/۲۰</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">رحمت رحیمی </small>
+                          <small style="text-align:justify" class="block m-t-sm">آهنگ چرا رفتی راتقدیم میکنم به عشقم سحر همون سحری که آتیش زد به زندگی ورفت حتی پشت سرشم نگاه نکردm</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۶/۱/۱۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">مرتضی</small>
+                          <small style="text-align:justify" class="block m-t-sm">من با این آهنگ خاطره دارم... حرف نداره</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۶/۵/۲۷</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">کوروش اهورآب ی</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۷/۵/۸</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">top</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۷/۸/۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">بابک </small>
+                          <small style="text-align:justify" class="block m-t-sm">خوبه</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۷/۸/۱۴</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">خیلی زیباست</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۷/۸/۲۷</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">مهران</small>
+                          <small style="text-align:justify" class="block m-t-sm">عاااااااااالیه صدااااش</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۸/۱/۲۶</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۸/۶/۸</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۸/۸/۲۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">خوب</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۸/۹/۱۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی </small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۸/۱۱/۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">مرتضی</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی است</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۹/۵/۳۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">زهرا</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۹/۷/۲۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی ⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️⁩⁦❤️</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۳۹۹/۸/۲۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">Moh</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۱/۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عاااااالی❤</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۱/۲۴</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">حمیدرضاکاشانی</small>
+                          <small style="text-align:justify" class="block m-t-sm">باسپاس عالی بود</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۲/۲</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">پیمان</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی⭐⭐⭐⭐⭐</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۲/۵</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">رها</small>
+                          <small style="text-align:justify" class="block m-t-sm">خیلی عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۲/۲۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">منوچهر</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالب</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۳/۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">جعفر رضازاده اوخچلار</small>
+                          <small style="text-align:justify" class="block m-t-sm">سلام خوشحالم که یک ایرانی هستم آن هم ترک هستم و در خطه آذربایجان  ارومیه دارم زندگی میکنم </small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۴/۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالیه</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۴/۲۳</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">مهدی</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۵/۸</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">آهنگ عالیییه </small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۵/۲۹</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">بسبار زیبا</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۶/۸</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۶/۲۱</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">خوب</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۶/۲۲</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">خوب</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۶/۲۲</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">ناشناس</small>
+                          <small style="text-align:justify" class="block m-t-sm">عالی</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div><article class="media">
+                        <span class="pull-left thumb-sm"><img src="images/comment.png"></span>
+                        <div class="media-body">
+                          <div class="pull-right media-xs text-center text-muted">
+                            <strong style="font-size:11px; color:#545ca6" class="h4">۱۴۰۰/۶/۳۰</strong><br>
+                          </div>
+                          
+                          <small style="text-align:left; color : #545ca6; font-weight: bold" class="block">محمد امینی</small>
+                          <small style="text-align:justify" class="block m-t-sm">اهنگ شاد</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div></section>
+                  </section>                    </div>
+                    <div style="padding-bottom: 55px;"></div>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+      </section>
+    </section>
+        <div class="bg-dark hidden-xs" style="bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    direction: rtl;
+    height: 55px;
+    font-size:11px;z-index: 2;">
+        <ul style="
+    font-size: 11px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding:0;
+    width: 69%;" class="nav nav-pills">
+                                <li><a href="index">صفحه اصلی</a>
+                                </li>
+                                <li><a href="music/new">آهنگ های جدید</a>
+                                </li>
+                                <li><a href="music/album/new">آلبوم های جدید</a>
+                                </li>
+                                <li><a href="music/singer">خوانندگان</a>
+                                </li>
+                                <li><a href="music/album">آلبوم ها</a>
+                                </li>
+                                <li><a href="music/music">آهنگ ها</a>
+                                </li>
+                                <li><a href="music/gener">سبک ها</a>
+                                </li>
+                                <li><a title="دانلود آهنگ جدید" href="http://www.irmp3.ir/tag/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%A2%D9%87%D9%86%DA%AF-%D8%AC%D8%AF%DB%8C%D8%AF">دانلود آهنگ جدید</a>
+                                </li>
+                                <li><a href="music/lyric">متن آهنگ</a>
+                                </li>
+                                <li><a target="_blank" href="https://irarz.com" alt="نرخ ارز، قیمت سکه،قیمت طلا">قیمت دلار</a>
+                                </li>
+                                <li><a href="mailto:info@irmp3.ir">تماس با ما</a>
+                                </li>
+                            </ul>
+                            <div class="designer">
+                                    <p>
+                                    این وب سایت تابع قوانین جمهوری اسلامی ایران می باشد .
+                                        تمامی حقوق برای IRMP3 محفوظ می باشد .
+                                    کپی از این وب سایت بدون ذکر و لینک منبع مجاز نمی باشد.
+                                    </p>
+                                </div>
+        </div>    
+  </section>
+ 
+
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>  
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/app.plugin.js"></script>
+  <!--<script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/demo.js"></script>-->
+    
+   
+
+    
+    <!--<script type="text/javascript" src="js/pop.js"></script>-->
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,2608155,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?2608155&101" alt="cool hit counter" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+  
+    <!--<iframe frameborder="0" src="http://irmp3.ir/tabligh.html"  height="2" width="2" marginheight="0" marginwidth="0" target="_parent"></iframe>-->
+   </body>
+</html>
+ <!--<script type="text/javascript"> 
+        var head = document.getElementsByTagName("head")[0]; 
+        var script = document.createElement("script"); 
+        script.type = "text/javascript"; 
+        script.async = 1; 
+        script.src = "https://s1.mediaad.org/serve/irmp3.ir/loader.js"; 
+        head.appendChild(script); 
+    </script>-->
+    
+  <script type="text/javascript">
+    (function(){
+    var now = new Date();
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.async = true;
+    var script_address = 'https://cdn.yektanet.com/js/irmp3.ir/native-irmp3.ir-7835.js';
+    script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
+    head.appendChild(script);
+    })();
+</script>
+<script type="text/javascript">
+	now = new Date();
+	var head = document.getElementsByTagName('head')[0];
+	var script = document.createElement('script');
+	script.async = true;
+	script.type = 'text/javascript';
+	var script_address = 'https://cdn.yektanet.com/template/bnrs/yn_bnr.min.js';
+	script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
+	head.appendChild(script);
+</script>
